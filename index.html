@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎮 GameVault Neon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <h1 class="neon">Game Vault</span></h1>
+      <p class="tagline">Explore • Favorite • Find where to Play / Buy</p>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search games..." />
+
+      <select id="genre">
+        <option value="">All Genres</option>
+        <option value="action">Action</option>
+        <option value="rpg">RPG</option>
+        <option value="adventure">Adventure</option>
+        <option value="shooter">Shooter</option>
+        <option value="simulation">Simulation</option>
+        <option value="indie">Indie</option>
+      </select>
+
+      <select id="platform">
+        <option value="">All Platforms</option>
+        <option value="4">PC</option>
+        <option value="18">PlayStation</option>
+        <option value="1">Xbox</option>
+        <option value="7">Nintendo Switch</option>
+      </select>
+
+      <select id="sort">
+        <option value="">Sort</option>
+        <option value="-rating">Top Rated</option>
+        <option value="-released">Newest</option>
+        <option value="-added">Trending</option>
+      </select>
+
+      <button id="searchBtn">Search</button>
+      <button id="favoritesBtn">⭐ Favorites</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading">Loading games...</div>
+
+  <main>
+    <div id="games" class="games-container"></div>
+
+    <div class="pagination">
+      <button id="prevBtn">Back</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </main>
+
+  <!-- Netflix-style full screen modal -->
+  <div id="modal" class="modal">
+    <div class="modal-overlay"></div>
+
+    <div class="modal-panel">
+      <button id="closeModal" class="close-btn">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

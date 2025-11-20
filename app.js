@@ -184,7 +184,6 @@ const storeLogos = {
         <div class="favorite-btn ${isFavorite ? "active" : ""}">⭐</div>
         <img src="${game.background_image || ""}" alt="${game.name}">
         <h3>${game.name}</h3>
-        <p class="price price-na">No Price</p>
         <p>Rating: ${game.rating || "N/A"}</p>
       `;
 
